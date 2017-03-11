@@ -20,7 +20,7 @@ Swift版本星级评价控件，支持半星评价和设置间隙
 ##  <a id="用xib/SB写StarEvaluateView">用xib/SB写StarEvaluateView</head>
 1、首先在xib创建一个view，如图所示：
 <p align="left" >
-    <img styl="width:320px; height:112px;" src="https://github.com/vjieshao/StarEvaluateView/blob/master/Create@2x.png" alt="StarEvaluateView" title="StarEvaluateView">
+    <img style="width:320px; height:112px;" src="https://github.com/vjieshao/StarEvaluateView/blob/master/Create@2x.png" alt="StarEvaluateView" title="StarEvaluateView">
 </p>
 
 2、设置view继承自StarEvaluateView
