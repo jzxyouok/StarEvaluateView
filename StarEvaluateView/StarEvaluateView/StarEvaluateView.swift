@@ -8,6 +8,9 @@
 
 import UIKit
 
+// 星星数回调
+typealias StarEvaluateViewSuccessBlock = (_ index: CGFloat, _ halfIndex: CGFloat, _ percent: CGFloat) -> Void
+
 class StarEvaluateView: UIView {
 
     // 星级数量
@@ -20,6 +23,8 @@ class StarEvaluateView: UIView {
     var selectedImg: UIImage?
     // 是否显示半星（默认不现实）
     var hasShowHalfStar = false
+    // 星星数回调
+    var successBlock: StarEvaluateViewSuccessBlock?
     
     /******通过xib设置*******/
     @IBInspectable var 设置星级: Int {
@@ -195,6 +200,10 @@ class StarEvaluateView: UIView {
      改变星星状态
      */
     fileprivate func changeStarStatus(_ percent: CGFloat, index: CGFloat, halfIndex: CGFloat, imgW: CGFloat) -> CGFloat {
+        // 回调
+        if let block = successBlock {
+            block(index, halfIndex, percent)
+        }
         if self.hasShowHalfStar {
             // 半星算法判断
             let indexStr = NSString(string: String(describing: halfIndex))

@@ -23,6 +23,9 @@ class ViewController: UIViewController {
         // 半星
         let halfStarView = StarEvaluateView(sumCount: 5, starSpace: 20, norImg: UIImage(named: "GoodsDetailCollection"), selImg: UIImage(named: "yellowStar"))
         halfStarView.hasShowHalfStar = true
+        halfStarView.successBlock = {
+            print($0, $1, $2)
+        }
         halfStarView.frame = CGRect(x: 20, y: titleLabel.frame.maxY + 10, width: 205, height: 20)
         view.addSubview(halfStarView)
         

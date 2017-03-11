@@ -45,5 +45,7 @@ Swift版本星级评价控件，支持半星评价和设置间隙
     var selectedImg: UIImage?
     // 是否显示半星（默认不现实）
     var hasShowHalfStar = false
+    // 星星数回调
+    var successBlock: StarEvaluateViewSuccessBlock?
 ```
 
