@@ -5,9 +5,7 @@ Swift版本星级评价控件，支持半星评价和设置间隙
 系统支持: iOS7+，iPhone/iPad, Swift2.3/3.0
 
 ##  <a id="使用效果">使用效果</head>
-<p style="width: 268px; height: 498px">
 ![image](https://github.com/vjieshao/StarEvaluateView/blob/master/starEvaluateView.gif ) 
-</p>
 
 ##  <a id="如何使用StarEvaluateView">如何使用StarEvaluateView</head>
 直接把StarEvaluateView.swift文件夹导入到工程中，即可使用。根目录包含一个swift2.3版本的SatrEvaluateView，如果你工程是用swift2.3编写的，可以导入那个。
